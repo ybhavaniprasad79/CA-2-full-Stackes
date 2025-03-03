@@ -17,7 +17,7 @@ const restaurantSchema=new mongoose.Schema({
     rating:{
         type:Number
     },
-    menu:{
+    menu:[{
         name:{
             type:"String",
             requried:true
@@ -29,7 +29,7 @@ const restaurantSchema=new mongoose.Schema({
             type:"String",
             requried:true
         }
-    }
+    }]
 })
 
 
